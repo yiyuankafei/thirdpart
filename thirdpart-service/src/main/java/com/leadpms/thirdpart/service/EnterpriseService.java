@@ -15,7 +15,6 @@ public class EnterpriseService {
 	EnterpriseDao enterpriseDao;
 	
 	public Enterprise get(String name) {
-		System.out.println("name:" + name);
 		EnterpriseRequest request = JSON.parseObject(name, EnterpriseRequest.class);
 		return enterpriseDao.getbyName(request.getCompanyName());
 	}

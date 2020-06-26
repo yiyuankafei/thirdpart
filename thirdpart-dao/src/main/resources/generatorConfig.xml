@@ -27,11 +27,19 @@
                              type="XMLMAPPER">
         </javaClientGenerator>
         
-        <table tableName="enterprise" domainObjectName="Enterprise"
+        <!-- <table tableName="enterprise" domainObjectName="Enterprise"
                enableCountByExample="true" enableDeleteByExample="true" enableSelectByExample="true"
                enableUpdateByExample="true" selectByExampleQueryId="true">
             <columnOverride column="img" javaType="java.lang.String" jdbcType="VARCHAR"/>
             <columnOverride column="ext" javaType="java.lang.String" jdbcType="VARCHAR"/>
+        </table> -->
+        <table tableName="partner" domainObjectName="Partner"
+               enableCountByExample="true" enableDeleteByExample="true" enableSelectByExample="true"
+               enableUpdateByExample="true" selectByExampleQueryId="true">
         </table>
+        <!-- <table tableName="partner_request_log" domainObjectName="PartnerRequestLog"
+               enableCountByExample="true" enableDeleteByExample="true" enableSelectByExample="true"
+               enableUpdateByExample="true" selectByExampleQueryId="true">
+        </table> -->
     </context>
 </generatorConfiguration>

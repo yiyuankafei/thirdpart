@@ -13,12 +13,12 @@ import com.leadpms.thirdpart.dao.mapper.auto.EnterpriseMapper;
 public class EnterpriseDao {
 	
 	@Autowired
-	EnterpriseMapper mapper;
+	EnterpriseMapper enterpriseMapper;
 	
 	public Enterprise getbyName(String name) {
 		EnterpriseExample example = new EnterpriseExample();
 		example.createCriteria().andNameEqualTo(name);
-		List<Enterprise> list = mapper.selectByExample(example);
+		List<Enterprise> list = enterpriseMapper.selectByExample(example);
 		if (list.size() == 0) {
 			throw new RuntimeException("公司名不存在");
 		}
