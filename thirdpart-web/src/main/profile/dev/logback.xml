@@ -1,0 +1,10 @@
+<configuration debug="false" scan="false">
+    <appender name="ROOT_APPENDER" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{5} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <root level="INFO">
+        <appender-ref ref="ROOT_APPENDER"/>
+    </root>
+</configuration>
